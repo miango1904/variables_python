@@ -27,13 +27,29 @@ def ej1():
     - Multiplicación
     - División
     - Exponente/Potencia
-
     - Para todos los casos se debe imprimir en pantalla el resultado aclarando
       la operación realizada en cada caso y con que números
       se ha realizado la operación
       ej: La suma entre 4.2 y 6.5 es 10.7
-
     '''
+    pri_num = print('ingrese primer numero')
+    num_1 = float(input()) 
+    seg_num = print('ingrese segundo numero')
+    num_2 = float(input())
+    Suma = num_1 + num_2
+    Resta = num_1 - num_2
+    Multiplicación = num_1 * num_2
+    División = num_1 / num_2
+    Potencia = num_1 **2
+    pot_2 = num_2**2
+    print('la suma de', num_1,'y',num_2, 'es',Suma)
+    print('la resta de', num_1,'y',num_2, 'es',Resta)
+    print('la multiplicacion de', num_1,'y',num_2, 'es',Multiplicación)
+    print('la divisio de', num_1,'y',num_2, 'es',División)
+    print('la potencia de', num_1, 'es',Potencia)
+    print('la potencia de', num_2, 'es',pot_2)
+    
+    
 
 
 def ej2():
@@ -44,7 +60,6 @@ def ej2():
     - El DNI de la persona
     - La edad de la persona
     - La altura de la persona
-
     Finalmente el programa debe imprimir dos líneas de texto por separado
     - En una línea imprimir el nombre completo y el DNI, aclarando de que
       campo se trata cada uno
@@ -53,8 +68,18 @@ def ej2():
       altura de la persona
       Nuevamente debe aclarar el campo de cada uno, para el que lo lea
       entienda de que se está hablando.
-
     '''
+    pri_num = print('ingrese su nombre y apellido')
+    nombre = str(input())
+    dni = print('ingrese su DNI')
+    DNI = input()
+    edad = print('ingrese su edad')
+    Edad = int(input())
+    alt = print('ingrese su altura')
+    Alt = float(input())
+    print('nombre completo:',nombre,'dni:',DNI)
+    print('nombre completo:',nombre,'edad:',Edad,'altura:',Alt)
+
 
 
 def ej3():
@@ -87,8 +112,16 @@ def ej3():
     https://www.pythonforbeginners.com/dictionary/python-split
 
     Cualquier duda con el método split pueden consultarla por el campus
-
     '''
+    pri_padr = print('ingrese su nombre y apellido')
+    padre_1 = str(input())
+    seg_padr = print('ingrese su nombre y apellido')
+    padre_2 = str(input())
+    hijo = print('ingrese solamente nombre del hijo ')
+    Hijo1 = str(input())
+    nombre1,apellido1 = padre_1.split()
+    nombre2,apellido2 = padre_2.split()
+    print(Hijo1,apellido1,apellido2)
 
 
 def ej4():
@@ -123,6 +156,19 @@ def ej4():
 
     Cualquier duda con el método split pueden consultarla por el campus
     '''
+    pri_per = print('ingrese su nombre y apellido')
+    persona_1 = str(input())
+    seg_per = print('ingrese su nombre y apellido')
+    persona_2 = str(input())
+    nombre1,apellido1 = persona_1.split()
+    nombre2,apellido2 = persona_2.split()
+    if apellido2 == apellido1:
+      print('estas personas son parientes')
+    elif apellido2 != apellido1:
+      print('estas personas no son parientes')
+
+    
+
 
 
 def ej5():
@@ -149,12 +195,17 @@ def ej5():
 
     Cualquier duda con estos métodos pueden consultarla por el campus
     '''
+    pri_per = print('ingrese su nombre y apellido')
+    persona_1 = str(input())
+    print(persona_1.lower())
+    print(persona_1.upper())
+    print(persona_1.capitalize())
 
 
 if __name__ == '__main__':
     print("Ejercicios de práctica")
-    ej1()
-    # ej2()
-    # ej3()
-    # ej4()
-    # ej5()
+    # ej1()
+    #ej2()
+    #ej3()
+    #ej4()
+    #ej5()

@@ -19,6 +19,10 @@ def ej1():
     # Ejercicios de práctica numérica
     numero_1 = 5
     numero_2 = 7
+    res_sum = numero_1 + numero_2
+    print(res_sum)
+    rest = numero_1 -numero_2
+    print(rest)
 
     # Realizar la suma de las dos variables
     # numero_1 y numero_2
@@ -38,10 +42,18 @@ def ej2():
     # Ahora los valores a operar deben ser ingresados por
     # consola con la función "input" como se ve a continuación
     print('Ingrese el primer número decimal a operar:')
-    numero_1 = int(input())
+    numero_1 = float(input())
 
     print('Ingrese el segundo número decimal a operar:')
-    numero_2 = int(input())
+    numero_2 = float(input())
+    op_suma = numero_1 + numero_2
+    op_resta = numero_1 - numero_2
+    op_division = numero_1 / numero_2
+    op_mult = numero_1 * numero_2
+    print('El resultado de sumar',numero_1,'mas',numero_2,'es',op_suma,)
+    print('El resultado de restar',numero_1,'menos',numero_2,'es',op_resta,)
+    print('El resultado de dividi',numero_1,'entr',numero_2,'es',op_division,)
+    print('El resultado de multiplicar',numero_1,'entre',numero_2,'es',op_mult)
 
     # Alumno: Imprima en pantalla los dos números decimales solicitados
     # print(....)
@@ -71,6 +83,9 @@ def ej3():
 
     print('Ingrese su apellido/s:')
     apellido = str(input())
+    nombre_completo = nombre+apellido
+    print(nombre_completo)
+    print(len(nombre_completo))
 
     # Imprima su nombre completo
 
@@ -93,6 +108,11 @@ def ej4():
 
     print('Ingrese palabra 3:')
     palabra_3 = str(input())
+    
+    inicial_1 = palabra_1[0]
+    inicial_2 = palabra_2[0]
+    inicial_3 = palabra_3[0]
+    print (inicial_1,inicial_2,inicial_3)
 
     # De cada palabra debe tomar la primera letra y armar el acrónimo
     # Ejemplo: Alumbrado, barrido y limpieza --> ABL
@@ -109,6 +129,10 @@ def ej5():
     print('Ingrese palabra 2:')
     palabra_2 = str(input())
 
+    pri_3 = palabra_1[:3]
+    ult_3 = palabra_2[-3:]
+    print(pri_3,ult_3)
+
     # De la primera palabra tome las primeras tres letras, utilice el operador :
     # De la segunda palabra tome las últimas tres letras, utilice el operador :
     # Formar una nueva palabra con los recortes solicitados
@@ -117,8 +141,8 @@ def ej5():
 
 if __name__ == '__main__':
     print("Bienvenidos a otra clase de Inove con Python")
-    ej1()
-    # ej2()
-    # ej3()
-    # ej4()
-    # ej5()
+    #ej1()
+    #ej2()
+    #ej3()
+    #ej4()
+    #ej5()
